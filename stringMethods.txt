@@ -1,0 +1,137 @@
+
+
+
+String Methods:
+1.lower()
+2.upper()
+3.capitalize()
+4.title()
+5.swapcase()
+6.casefold()
+7.count()
+8.index()
+9.find()
+10.strip()
+11.split()
+12.partition()
+13.replace()
+14.startwith()
+15.endswith()
+16.islower()
+17.isupper()
+18.iscapitalize()
+19.istitle()
+20.len()
+21." ".join(list_name)
+
+
+st = "Brainmentors"
+st[0]
+'B'
+st[9]
+'o'
+"hello" == "Hello"
+False
+st = "This IS a pYTHon lanGuAge"
+st.lower()
+'this is a python language'
+st.upper()
+'THIS IS A PYTHON LANGUAGE'
+st.capitalize()
+'This is a python language'
+st.title()
+'This Is A Python Language'
+st.swapcase()
+'tHIS is A PythON LANgUaGE'
+st
+'This IS a pYTHon lanGuAge'
+"hello".casefold() == "Hello".casefold()
+True
+len(st)
+25
+st.index("i")
+2
+st.index("I")
+5
+st.rindex("i")
+2
+st.index("z")
+Traceback (most recent call last):
+  File "<pyshell#40>", line 1, in <module>
+    st.index("z")
+ValueError: substring not found
+st.find("z")
+-1
+st.count("a")
+2
+st.count("a",2)
+2
+st.count("a",1)
+2
+st.strip()
+'This IS a pYTHon lanGuAge'
+st = "   This IS a pYTHon lanGuAge"
+st.strip()
+'This IS a pYTHon lanGuAge'
+st = "   This IS a pYTHon lanGuAge******"
+st.rstrip("*")
+'   This IS a pYTHon lanGuAge'
+st = "This IS a pYTHon lanGuAge"
+st.split()
+['This', 'IS', 'a', 'pYTHon', 'lanGuAge']
+li = ["as","jk","lm","ab"]
+" ".join(li)
+'as jk lm ab'
+"*".join(li)
+'as*jk*lm*ab'
+st.partition()
+Traceback (most recent call last):
+  File "<pyshell#55>", line 1, in <module>
+    st.partition()
+TypeError: str.partition() takes exactly one argument (0 given)
+st.partition("a")
+('This IS ', 'a', ' pYTHon lanGuAge')
+st.islower()
+False
+st.isupper()
+False
+st.startswith("This")
+True
+st.startswith("this")
+False
+st.endswith("lang")
+False
+st.endswith("ge")
+True
+st.replace("a","q")
+'This IS q pYTHon lqnGuAge'
+st.replace("a","q",1)
+'This IS q pYTHon lanGuAge'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
