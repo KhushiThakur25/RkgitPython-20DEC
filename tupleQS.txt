@@ -1,0 +1,10 @@
+Exercise 1: Reverse the tuple
+Exercise 2: Access value 20 from the tuple
+Exercise 3: Create a tuple with single item 50
+Exercise 4: Unpack the tuple into 4 variables
+Exercise 5: Swap two tuples in Python
+Exercise 6: Copy specific elements from one tuple to a new tuple
+Exercise 7: Modify the tuple
+Exercise 8: Sort a tuple of tuples by 2nd item
+Exercise 9: Counts the number of occurrences of item 50 from a tuple
+Exercise 10: Check if all items in the tuple are the same
