@@ -1,0 +1,22 @@
+functions:
+	reusable piece of code
+	pre-defined - print, type, range , input
+	user-defined : 
+		-> will be defined by the user
+		->using def keyword
+
+
+1.function definition-code
+2.function calling-call
+def add():
+	print("Hello world..")
+
+add()
+
+Types of arguments in a function:
+1 - Positional/Required arguments
+2-Keyword arguments
+3-default arguments
+4-arbitrary arguments
+	-*args - Non-keyword argument
+	-**kwargs - keyword argument
