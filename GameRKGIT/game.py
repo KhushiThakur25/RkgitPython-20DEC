@@ -21,7 +21,24 @@ frogHeight = frogImg.get_height()
 w,h = 50,50
 
 def homeScreen():
-    pass
+    font = pygame.font.SysFont(None,100)
+    text = font.render("Welcome to the jungle",True,white)
+
+    font_2 = pygame.font.SysFont(None,60)
+    text_2 = font_2.render("Press Space key to start..",True,white)
+
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+            if event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_SPACE:
+                    game()
+        screen.blit(bg,(0,0))
+        screen.blit(text,(100,100))
+        screen.blit(text_2,(30,200))
+        pygame.display.update()
 
 def gameOver():
     pass
@@ -44,6 +61,7 @@ def game():
     move_y = 0
     speed = 2
     x,y = 0,0
+    counter = 0
     snakeList = []
     snakeLength = 1
     while True:
@@ -102,8 +120,9 @@ def game():
             frogX = random.randint(1,screenWidth-frogWidth)
             frogY = random.randint(1,screenHeight-frogHeight)
             snakeLength += 40
+            counter += 1 
 
 
         pygame.display.flip()
 
-game()
+homeScreen()
