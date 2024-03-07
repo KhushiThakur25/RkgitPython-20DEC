@@ -48,8 +48,10 @@ def drawSnake(snakeList):
         pygame.draw.rect(screen,white,[snakeList[i][0],snakeList[i][1],w,h])
        
 
-def score():
-    pass
+def score(counter):
+    font = pygame.font.SysFont(None,30)
+    text = font.render(f"Score : {counter}",True,white)
+    screen.blit(text,(70,10))
 
 
 
@@ -91,6 +93,7 @@ def game():
 
         screen.blit(bg,(0,0))
         screen.blit(frogImg,(frogX,frogY))
+        score(counter)
 
         snakeHead = []
         snakeHead.append(x)
